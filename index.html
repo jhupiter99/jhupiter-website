@@ -16,17 +16,17 @@
 
     <!-- Navigation -->
     <header>
-        <nav>
-            <h2>Jhupiter</h2>
-
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+       <nav>
+    <h2>Jhupiter</h2>
+<button class="menu-toggle" id="menu-toggle">☰</button>
+<ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
     </header>
 
     <!-- Home -->
@@ -49,19 +49,21 @@
     <h2>About Me</h2>
 
     <p>
-        Hello! I'm Jhupiter, a creative and passionate person interested
-        in web development, graphic design and technology.
+        Hello! I'm Jhupiter, a creative and motivated web developer
+        and graphic designer with a passion for technology and digital creativity.
     </p>
 
     <p>
-        I enjoy learning new skills, creating digital projects and
-        turning ideas into useful and beautiful designs.
+        I enjoy creating modern websites, designing engaging graphics,
+        and learning new technologies that help turn ideas into reality.
     </p>
 
     <p>
-        My goal is to continue improving my skills and create professional
-        websites and digital experiences.
+        I'm continuously developing my skills and working toward becoming
+        a professional designer and web developer who creates useful,
+        attractive, and user-friendly digital experiences.
     </p>
+</section>
 </section>
   <div class="skills">
     <h3>My Skills</h3>
@@ -88,24 +90,37 @@
   </div>
 
     <!-- Services -->
-    <section id="services">
-        <h2>My Services</h2>
+<section id="services">
+    <h2>My Services</h2>
 
-        <div>
+    <div class="services-container">
+
+        <div class="service">
             <h3>Web Design</h3>
-            <p>I create modern and responsive websites.</p>
+            <p>
+                I create modern, responsive and user-friendly websites
+                using HTML, CSS and JavaScript.
+            </p>
         </div>
 
-        <div>
+        <div class="service">
             <h3>Graphic Design</h3>
-            <p>I create posters, flyers, logos and other designs.</p>
+            <p>
+                I create creative posters, flyers, logos and digital
+                designs with a focus on clean and attractive visuals.
+            </p>
         </div>
 
-        <div>
-            <h3>Programming</h3>
-            <p>I build websites and simple web applications.</p>
+        <div class="service">
+            <h3>Web Programming</h3>
+            <p>
+                I build interactive websites and simple web applications
+                while continuously developing my programming skills.
+            </p>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- Projects -->
  <section id="projects">
@@ -114,19 +129,19 @@
     <div class="projects-container">
 
         <div class="project">
-            <h3>Website Design</h3>
-            <p>A modern website created using HTML and CSS.</p>
-        </div>
+    <h3>Website Design</h3>
+    <p>A modern website created using HTML and CSS.</p>
+    <button class="project-button" type="button">Coming Soon</button>
 
         <div class="project">
-            <h3>Graphic Design</h3>
-            <p>Creative posters, flyers and digital designs.</p>
-        </div>
+    <h3>Graphic Design</h3>
+    <p>Creative posters, flyers and digital designs.</p>
+    <button class="project-button" type="button">Coming Soon</button>
 
         <div class="project">
-            <h3>My Portfolio</h3>
-            <p>A personal portfolio website showcasing my skills and work.</p>
-        </div>
+    <h3>My Portfolio</h3>
+    <p>A personal portfolio website showcasing my skills and work.</p>
+    <button class="project-button" type="button">Coming Soon</button>
 
     </div>
 </section>
@@ -147,15 +162,32 @@
     Send Me an Email
 </a>
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
+    <form action="https://formspree.io/f/meajnlzw" method="POST">
 
-        <input type="email" placeholder="Your Email" required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
 
-        <textarea placeholder="Your Message" rows="6" required></textarea>
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
 
-        <button type="submit">Send Message</button>
-    </form>
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="6"
+        required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
 </section>
 
 <footer>
