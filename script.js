@@ -53,3 +53,35 @@ window.addEventListener("scroll", function () {
     }
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+    const skills = document.querySelectorAll(".skill");
+
+    skills.forEach(skill => {
+
+        const percentage = skill.querySelector(".percentage");
+        const progress = skill.querySelector(".skill-progress");
+
+        const target = Number(percentage.dataset.target);
+        const width = progress.dataset.width;
+
+        // Animate the blue bar
+        setTimeout(() => {
+            progress.style.width = width;
+        }, 300);
+
+        // Animate the percentage number
+        let current = 0;
+
+        const counter = setInterval(() => {
+            current++;
+
+            percentage.textContent = current + "%";
+
+            if (current >= target) {
+                clearInterval(counter);
+            }
+        }, 2000 / target);
+    });
+
+});
